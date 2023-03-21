@@ -389,9 +389,9 @@ This design is appropriate for my audience since it is user friendly and familia
 > These must be actual user testing tasks.
 > **Tasks are not questions!**
 
-1. TODO: task 1
+1. Identify two performances that are occuring on the two separate days of the Apple Harvest Festival, and provide a brief description of each group.
 
-2. TODO: task 2
+2. Identify areas in the Ithaca commons that have public parking and how to get from those areas to the food vendors and music stage.
 
 
 ### Participant 1 (Final Submission)
@@ -399,20 +399,20 @@ This design is appropriate for my audience since it is user friendly and familia
 
 1. Who is your user, e.g., where does the user come from, what is the user's job, characteristics, etc.?
 
-    TODO: tell us about the participant
-
+  My user is a male Sophomore from Virginia studying Information Science and Government. He does not have a job. He likes computers and interactiving with technology. He has never been to Apple Festival but wants to go.
 
 2. Does the user belong to your audience of the site?
 
     > If “No”, what’s your strategy of associating the user test results to your audience’s needs and wants? How can your re-design choices based on the user tests make a better fit for the audience?
 
-    TODO: (Yes / No)
+    (Yes)
 
 
 ### Participant 1 -- Testing Notes (Final Submission)
 > When conducting user testing, you should take notes during the test.
 
-TODO: participant user test notes
+      Task 1: After briefly looking at the screen, and participant noticed the events tab in the top right corner and clicked on it. From there, he scrolled through the performances an starte looking at the times that the perforamnces were. After mores scrolling, he successfully identified two perforamnces that were happening on two seperate days, the Rachel Beverly and Ageless Jazz band perforamnce. He also provided a brief description of each group.
+      Task 2: The participant then clicked on the Food tab and briefly scrolled through the food tab, before clicking back onto the home tab. He then began scrolling, until he found a map. He then proceeded to look for the free parking space on the map, as well as the food vendors, and identified them correctly.
 
 
 ### Participant 2 (Final Submission)
@@ -420,20 +420,20 @@ TODO: participant user test notes
 
 1. Who is your user, e.g., where does the user come from, what is the user's job, characteristics, etc.?
 
-    TODO: tell us about the participant
-
+    The second participant is also a Sophomore at Cornell University studying Environmental Engineering. She is from Ithaca and has been to Apple Festival many times before.
 
 2. Does the user belong to your audience of the site?
 
     > If “No”, what’s your strategy of associating the user test results to your audience’s needs and wants? How can your re-design choices based on the user tests make a better fit for the audience?
 
-    TODO: (Yes / No)
+    (Yes)
 
 
 ### Participant 2 -- Testing Notes (Final Submission)
 > When conducting user testing, you should take notes during the test.
 
-TODO: participant user test notes
+    Task 1: The user first starts with scrolling through the home page, which she continuoud to do so until she reached the tcat bus schedule. She then scrolled back up, then clicked on the events tab. She then successfully provided the times and descriptions for two performances on two separate days.
+    Task 2: The user immediately went back to the map on the home tab to successfully locate the free parking spcae and food vendor and music space. She did this after remembering the map she saw on the home page.
 
 
 ### Participant 3 (Final Submission)
@@ -441,28 +441,29 @@ TODO: participant user test notes
 
 1. Who is your user, e.g., where does the user come from, what is the user's job, characteristics, etc.?
 
-    TODO: tell us about the participant
 
+    The third participant is a male alumni of Cornell who still lives in the area. He works at a large tech firm and is intimately familiar with technology. He has been to Apple festival several times before.
 
 2. Does the user belong to your audience of the site?
 
     > If “No”, what’s your strategy of associating the user test results to your audience’s needs and wants? How can your re-design choices based on the user tests make a better fit for the audience?
 
-    TODO: (Yes / No)
+    (Yes)
 
 
 ### Participant 3 -- Testing Notes (Final Submission)
 > When conducting user testing, you should take notes during the test.
 
-TODO: participant user test notes
+  Task 1: After briefly looking at the screen, the participant went to the events tab and started scrolling through looking at the various performances. He was then able to successfully identify two performances that were happening on two seperate days and a description of them.
+  Task 2: The participant breifly finished scrolling through the events page, then proceeded to scroll through the food page to find a map. After failing to find one, the participant then went back to the home page and ascrolled through until they found a map and successfully completed the task.
 
 
 ### Potential Changes Based on User Testing (Final Submission)
 > What changes would you make to your design based on user testing?
 > Note: You are not required to change your design. Simply tell  us what you would change.
 
-TODO: user testing reflection
 
+Based on the user testing, the main thing I would do is change where the map is located. Either put it higher up on the home page or create a seperate page jsut for the map. I would also make the events page not as long, by making the descriptions and pictures smaller or making a wider flexbox for the blocks.
 
 ## Rationale (Final Submission)
 
@@ -475,26 +476,26 @@ Your rationale should be a polished version of the earlier explanations.
 ### Audience (Final Submission)
 > A complete and polished description of the intended audience(s) for your website.
 
-TODO: audience rationale
+The intended audience for this website are students who attend university in the local Ithaca area as well as Ithaca residents who have attended the Apple Harvest Festival before or have not.
 
 
 ### Audience Goals
 > Explain how your site's design addresses the goals of the audience.
 
-TODO: goal rationale
+My website addresses the goals of my audeince. For students who are looking to attend Applefest for the first time, the webiste immediatly gives the users a description of what the Apple Harvest Festival is about and its location. It also provides a map of the event and easily accessible tabs for events and food options for new Apple Festival goers. For veteran Apple Festival attendees, my design improves on the previous design by providing them certain times in which their favorite restaurants are busy and when they are not. It also provides much more detailed descriptions of events in case they have never seen a group perform and wanted to.
 
 
 ### Visual Design (Final Submission)
 > An explanation of how the final design is appropriate for your audience.
 > Include design patterns in your rationale.
 
-TODO: design rationale
+The final design incorperates a casual yet inviting atmosphere that is pleasing for both newcomers and veteren festival goers. The red, green, and oragen color scheme also gives the audience an idea of what the festival is about: apples. The fonts are well spaced so that they are easy to read, and the font itself is casual. The flexbox designs give each element enough space for ease of use as well as a repeated pattern to not confuse users. Also, the navigation bar below the top banner is an element that is shared with many other websites.
 
 
 ### Self-Reflection (Final Submission)
 > Take some time here to reflect on how much you've learned since you started this class. It's often easy to ignore our own progress. Take a moment and think about your accomplishments in this class. Hopefully you'll recognize that you've accomplished a lot and that you should be very proud of those accomplishments!
 
-TODO: self-reflection
+I learned more about the possibilities of flexboxes and how to more effectively use them. I also learned the importance of using div elements for better styling elements.
 
 
 ## Grading (Final Submission)
@@ -502,11 +503,11 @@ TODO: self-reflection
 ### Collaborators
 > List any persons you collaborated with on this project.
 
-TODO: list your collaborators
 
+None
 
 ### Reference Resources
 > Please cite any external resources you referenced in the creation of your project.
 > (i.e. W3Schools, StackOverflow, Mozilla, etc.)
 
-TODO: list reference resources
+StackOverflow, W3Schools
