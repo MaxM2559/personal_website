@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(239, 251, 218);
+    background-color: #f1fbff;
 }
 
 em {
@@ -10,26 +10,28 @@ em {
   }
 
 
-.navbar {
-    background-color: darkred;
+  /* body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    background-color: #146C94;
     color: white;
     display: flex;
-    justify-content: flex-end;
-    height: 40px;
+    justify-content: flex-start;
+    height: 65px;
     align-items: center;
-    width: 100%;
+    width: 100vw;
   }
-  @media (max-width: 580px) {
-    .navbar {
-        justify-content: center;
-    }
-}
+
 
   .navbar ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   .navbar li {
@@ -38,19 +40,106 @@ em {
 
   .navbar a {
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
     text-decoration: none;
+    margin-left: 20px;
   }
 
   .navbar a:hover {
-    text-decoration: underline;
+    color: #e97979;
   }
 
   .navbar li:not(:last-child)::after {
-    content: '|';
+    content: ' ';
     margin: 0 10px;
   }
+ */
+ body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: #146C94;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  align-items: center;
+  width: 100vw;
+  z-index: 100;
+}
+
+@media (max-width: 1280px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.navbar li {
+  padding: 0 10px;
+}
+
+.navbar a {
+  color: rgb(239, 251, 255);
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  position: relative;
+  margin-left: 30px;
+  letter-spacing: .12em;
+  font-size: 18px;
+}
+
+.navbar a:before,
+.navbar a:after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  font-size: 30px;
+  top: -10px;
+  transition: all 0.3s;
+}
+
+.navbar a:before {
+  content: '(';
+  left: -15.5px;
+  transform: translateX(10px);
+}
+
+.navbar a:after {
+  content: ')';
+  right: -15.5px;
+  transform: translateX(-10px);
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navbar a:hover {
+  color: #F24C4C;
+}
+
+.navbar li:not(:last-child)::after {
+  content: ' ';
+  margin: 0 10px;
+}
+
+
+
 
 
 .logo, h1 {
@@ -76,7 +165,7 @@ em {
     max-height: 80%;
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: 1280px) {
     .banner h1 {
         font-size: 35px;
     }
@@ -118,7 +207,7 @@ em {
     font-size: 64px;
     margin-bottom: 10px;
   }
-  @media (max-width: 580px) {
+  @media (max-width: 1280px) {
     .image-text h2 {
         color: rgb(23, 224, 157);
         font-size: 32px;
@@ -130,7 +219,7 @@ em {
     font-size: 30px;
     margin-bottom: 0;
   }
-  @media (max-width: 580px) {
+  @media (max-width: 1280px) {
     .image-text p {
         font-size: 20px;
         color: rgb(23, 224, 157);
@@ -138,14 +227,19 @@ em {
   }
 
   h2 {
-    color: rgba(214, 13, 13, 0.719);
-    letter-spacing: .05em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 45px;
+    color: #146C94;
+    letter-spacing: .04em;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 75px;
     padding-left: 50px;
+    z-index: 1;
   }
-  @media (max-width: 580px) {
-    h2{
+  /* .sidebox h2:hover { */
+    /* color: #391111; */
+  /* } */
+
+  @media (max-width: 1280px) {
+    h2.jump-1{
         font-size: 30px;
     }
   }
@@ -153,22 +247,23 @@ em {
   h3{
     color: rgba(214, 13, 13, 0.719);
     letter-spacing: .03em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 27px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 50px;
     padding-left: 50px;
   }
 
 
   p {
-    color: rgb(101, 34, 28);
-    font-size: large;
-    word-spacing: 0.1em;
-    letter-spacing: 0.02em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(37, 57, 90);
+    font-size:100%;
+    word-spacing: 0.19em;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 60px;
     padding-right: 60px;
   }
-  @media (max-width: 580px){
+  @media (max-width: 1280px){
     p {
         letter-spacing: 0.01em;
         font-size: 1em;
@@ -211,7 +306,7 @@ em {
     border-bottom: 2px solid rgb(203, 170, 85);
   }
 
-  @media (max-width: 580px){
+  @media (max-width: 1280px){
     .event-wrap {
         flex-direction: column;
         margin-top: 10px;
@@ -229,7 +324,7 @@ em {
     margin-left: auto;
     margin-right: auto;
   }
-  @media (max-width: 580px){
+  @media (max-width: 1280px){
     .event-wrap-food {
         flex-direction: column;
         margin-top: 10px;
@@ -279,3 +374,311 @@ em {
     padding-bottom: 2px;
     /* font-size: large; */
   }
+
+  .mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+    background-color: #effbff; /* Light background for a clean look */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+  @media (max-width: 1280px) {
+    .mainbox {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    h2 {
+      font-size: 55px;
+    }
+    .sidebox h2 {
+      line-height: 20px;
+    }
+  }
+
+  .sidebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px; /* Limit width for better text readability */
+}
+
+.sidebox p {
+  font-size: 1rem;
+  color: #555; /* Subtle gray for supporting text */
+  margin: 10px 0 0;
+  line-height: 1.6; /* Improved readability */
+}
+
+  .sidebox h2 {
+    line-height: 120px;
+  }
+
+  .box1 {
+    display: flex;
+  }
+
+  .mainbox img {
+    margin-top: 4%;
+    margin-left: 2%;
+    max-width: 45%;
+    max-height: 80vh;
+    object-fit: cover;
+    margin-left: 60px;
+  }
+
+  .mainboximage {
+    border-radius: 50%; /* Circular image for a modern profile look */
+    width: 350px; /* Adjusted size for a more balanced appearance */
+    height: 350px;
+    object-fit: cover;
+    margin-right: 20px; /* Space between the image and text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#jump-1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #333; /* Darker text for better contrast */
+}
+
+/*  */
+/* About section container */
+.about-section {
+  display: flex;
+  width: 100%;
+  height: 600px; /* Adjust based on your preference */
+  margin-top: 50px; /* Space between sections */
+  background-color: #ffffff; /* Clean background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+/* Left half - image */
+.about-left {
+  flex: 1; /* Takes up half the space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) sepia(1) hue-rotate(180deg) saturate(2); /* Blue tint */
+}
+
+/* Right half - text */
+.about-right {
+  flex: 1; /* Takes up half the space */
+  padding: 40px; /* Add some padding for better readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #333; /* Dark text for good contrast */
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222; /* Slightly darker for heading */
+}
+
+.about-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Subtle gray for text */
+}
+/*  */
+
+
+
+  .container {
+    opacity: 0; /* Hide the container initially */
+    transform: translateY(20px); /* Move the container down by 20px initially */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Apply transition effect */
+  }
+
+  .container.fade-in {
+    opacity: 1; /* Show the container with full opacity */
+    transform: translateY(0); /* Move the container to its original position */
+  }
+
+  hr {
+    border: 3px solid rgb(127, 180, 181);
+    border-radius: 5px;
+    border-top: 1px solid rgb(122, 122, 122);
+    margin: 3em 2em;
+  }
+
+  .block {
+    background-color: #c6e0eb;
+    /* c6e0eb */
+    /* border: 1px solid; */
+    /* border-color: #146C94; */
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 25px;
+    /* border-radius: 10px;  */
+    transition: background-color 0.3s ease;
+  }
+
+  .block:hover {
+    background-color: #abcdef; /* Replace with the desired shade */
+  }
+
+  .block p {
+    color: rgb(37, 57, 90);
+    font-size:90%;
+    word-spacing: 0.29em;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+
+  .block h2 {
+    font-size: 36px;
+    margin-bottom: -10px;
+  }
+  .block h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  /* .block p {
+    font-size: 14px;
+    line-height: 1.5;
+  } */
+
+  .block-skill {
+    background-color: #9ebecc;
+    margin: auto;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 25px;
+  }
+
+  .block-skill h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .block-skill-last {
+    background-color: #9ebecc;
+    margin: auto;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 25px;
+  }
+  .block-skill-last h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  .block-proj {
+    background-color: #c6e0eb;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease;
+    /* display: flex; */
+  }
+
+  .block-proj:hover {
+    background-color: #c0e7d2; /* Replace with the desired shade */
+  }
+
+
+  .gif {
+    /* flex: 1; */
+    width: 50%;
+    /* Add your GIF styling here */
+  }
+
+  .proj-text h3 {
+    font-size: 35px;
+    /* margin-bottom: 50px; */
+  }
+
+  .gif img {
+    width: 100%;
+    transform: scale(1);
+    /* Add your image styling here */
+  }
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+  /* Projects section container */
+.projects-section {
+  width: 66%;
+  /* margin-top: 20px; */
+  margin: auto;
+  padding: 20px 40px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  align-items: center;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Darker text for headings */
+}
+
+/* Individual project block */
+.project-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px; /* Space between project entries */
+  padding: 20px;
+  background-color: #ffffff; /* White background for each project */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensure content stays within bounds */
+}
+
+/* Project image */
+.project-image {
+
+  flex: 0 0 33%; /* Take up one-third of the container width */
+  max-width: 33%; /* Limit the image width to one-third of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 350px; /* Set a maximum height to keep images visually consistent */
+  object-fit: contain; /* Ensures the image fits within the bounds without cropping */
+  border-radius: 10px;
+  margin-right: 20px; /* Space between image and text */
+  background-color: #f4f4f4; /* Optional: adds a background for transparency support */
+  display: block;
+}
+
+/* Project text */
+.project-text {
+  flex: 1; /* Text takes up the remaining 2/3 space */
+}
+
+.project-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222; /* Slightly darker for headings */
+}
+
+.project-text p {
+  font-size: 1rem;
+  color: #555; /* Subtle gray for text */
+  line-height: 1.6; /* Improved readability */
+}

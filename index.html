@@ -14,29 +14,57 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#jump-1">HOME</a></li>
-            <li><a href="#jump-exp">EXPERIENCE</a></li>
+            <li><a href="#jump-1">ABOUT</a></li>
             <li><a href="#jump-proj">PROJECTS</a></li>
+            <li><a href="#jump-res">RESEARCH</a></li>
+            <li><a href="#jump-hobb">HOBBIES</a></li>
         </ul>
     </nav>
 
-    <div class="mainbox">
-        <div class="box1">
-            <img src="images/coconut.jpg" alt="me :]" class="mainboximage">
+    <!-- <div class="mainbox"> -->
+        <!-- <div class="box1">
+            <img src="images/sum_profile.jpg" alt="me :]" class="mainboximage">
             <div class="sidebox">
                 <div class="container">
-                    <h2 id="jump-1">Hi there, <br>I'm Max.</h2>
+                    <h2 id="-1">Max Ma</h2>
                 </div>
-                <p>Hello there! I'm Max Ma and welcome to my website. I am currently a student at Cornell University's College of Arts and Sciences double majoring in Economics and Information Science (Data Science).<br><br> I am pursuing a career path in using data science for various applications. I am interested in studying the effects blockchain and cryptocurrencies could have on businesses and governments.
-                </p>
-                <p>Outside of my studies, I am also interested in cooking, playing guitar, taiko drumming, and stressing over how much protein is in each meal.</p>
+                <p>Welcome to my Personal Website.</p>
+            </div>
+        </div> -->
+
+        <div class="mainbox">
+            <!-- Background Image -->
+
+            <div class="box1">
+                <img src="images/sum_profile.jpg" alt="me :]" class="mainboximage">
+                <div class="sidebox">
+                    <h2>Max Ma</h2>
+                    <p>Welcome to my website! This website is meant to show off my projects, research, and hobbies.</p>
+                </div>
             </div>
         </div>
-        <hr>
-        <h3 id="jump-exp">Experience</h3>
+
+
+
+        <div class="about-section">
+            <div class="about-left">
+                <img src="images/DC_hor_profile.jpg" alt="Max Ma" class="about-image">
+            </div>
+            <div class="about-right">
+                <h2 id="jump-1">About Me</h2>
+                <p>
+                    Hi! I'm Max Ma, a senior at Cornell University studying Economics and Data Science. I'm passionate about using data to uncover insights in economics and business, with experience spanning projects involving government and education data analysis to exploring innovative business applications of blockchain technology. Outside of academics, I lead practices for the Cornell Taiko Club, rehearse with the Cornell Orchestra, and experiment with new recipes in the kitchen.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- <hr> -->
+
+        <!-- <h3 id="-exp">Experience</h3>
             <div class="block">
-                <h2>Data and Programming Intern
-                </h2>
+                <h2>Data and Programming Intern</h2>
                 <h3>Edugion, June 2022 - August 2022</h3>
                 <p>Worked for a start-up called Edugion, where I came up with solutions to a variety of data-related problems, from creating programs that interact with Excel sheets to visualizing thousands of data points with Leaflet. <br><br>
                     Because of the start-up environment, I had experience approaching problems from many different angles and designing outside-the-box solutions.
@@ -54,18 +82,140 @@
                 <h2>Data Science Intern</h2>
                 <h3>Learn2Smart, December 2020 - March  2021</h3>
                 <p>Created programs to clean and sort large sets of texts from SAT passages and other language sets. Used  Python and learned how to utilize the Pandas library for various projects.<br><br> Collaborated with a team to identify solutions. Also provided documentation for future reference.<br><br></p>
+            </div> -->
+
+        <!-- <hr> -->
+
+
+        <div class="projects-section">
+            <h2 id="jump-proj">Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-block">
+                <img src="images/leaflet-map.png" alt="Interactive Cluster Map" class="project-image">
+                <div class="project-text">
+                    <h3>Interactive Cluster Map with Automatic Categories</h3>
+                    <p><!-- A mapping tool that creates a map and marks every point of data from a dataset. It automatically
+                        categorizes data into clusters for easy visualization and exploration. -->
+                        A mapping tool that creates a map and marks every point of data from a LatLong data set. These points are automatically sorted by their given category variable and can be manually hidden/clustered with the layer control menu at the top right. The focus for this project was a proof of concept that a map representing thousands of data points while being user readible was possible and doesn't demand much processing. <a href="https://leafletmapdemo.surge.sh/#close">Demo</a>
+                    </p>
+                </div>
             </div>
 
-        <hr>
-        <h3 id="jump-proj">Projects</h3>
+            <div class="project-block">
+                <img src="images/ted-finds.png" alt="Interactive Cluster Map" class="project-image">
+                <div class="project-text">
+                    <h3>TED Finds: A Search Engine to Find Relavent Ted Talks</h3>
+                    <p> This web-based tool recommends TED Talks similar to a user-selected talk by analyzing their content and topics. It also provides a breakdown of the depth of coverage for various subjects within each talk. The project utilizes fundamental natural language processing techniques, including edit distance, cosine similarity, singular value decomposition (SVD), TF-IDF, and sentiment analysis, to deliver meaningful recommendations.<a href="http://4300showcase.infosci.cornell.edu:5206/">Demo</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-block">
+                <img src="images/corrospondence.png" alt="Interactive Cluster Map" class="project-image">
+                <div class="project-text">
+                    <h3>Creating the first International Industry Code Corrospondence Sheet</h3>
+                    <p>TThis project developed a suite of tools to generate comprehensive correspondence sheets for international industry codes, including NAICS, HS, ISIC, CPC, and their variations. Unlike existing resources that only mapped codes across years or between two systems, these tools create unified correspondence sheets capable of translating across all publicly available variations. <a href="https://github.com/MaxM2559/Corrospondence">GitHub Page.</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <img src="images/econometrics_picture.png" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Research Project: Participation of team sports by high school students influence on underage drinking?</h3>
+                    <p>
+                        As part of a class of a research team, I analyzed the impact of high school students' regular participation in team sports on their likelihood of engaging in risky behaviors such as gambling. Using data from the 2006 High School Risk Survey, we used Stata to conduct linear , multilinear , and logistic regression analyses. Our findings revealed a positive and statistically significant relationship between sports participation and gambling-like behavior.
+                           <a href="/images/data_analysis_underage_drinking.pdf">Final Report</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <img src="images/lambdaledge.png" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Lambda Ledge: Game Level Generator</h3>
+                    <p>
+                        As part of the semester long final project for the CS3110 Functional Programming course, my team developed a working 2D platformer game. Our main focus was creating an intuitive level generator, individuals with no coding experience could easily create their own level designs in a text file which is then read and turned into an actual level in the game. Lambda Ledge is complete with movement, powerups, and levels.
+                    <a href="https://github.com/polybeandip/lambda-ledge">GitHub page.</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+
+<!--  -->
+
+        <div class="projects-section">
+            <h2 id="jump-res">Research</h2>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <img src="images/EEL.png" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Economics Education Lab (EEL) at Cornell </h3>
+                    <p>
+                        I joined the EEL in the summer of 2024. There, I worked with Cornell University professors on creating standardized metrics for measuring student comprehension of macroeconomics through an assessment that I helped write. I also helped analyze, read, and write research papers with the Cornell Economics Department faculty.  At the end of my program, I presented the work accomplished over the summer to program donors and we plan on presenting our findings in future conferences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-block">
+                <img src="images/CUER.png" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Referee for the Cornell Undergraduate Economics Review </h3>
+                    <p>
+                        Was a Referee for CUER from 2023 - 2024. There I edited, reviewed, and checked methods and statistics for economic research papers submitted for publication in the student-run undergraduate economics journal. Both undergraduate and graduate economics students submitted papers.
+
+                    </p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+
+<!--  -->
+
+
+        <div class="projects-section">
+            <h2 id="jump-hobb">Hobbies</h2>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <img src="images/nasdeq.jpg" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Cornell Blockchain Club: Consulting Team Member</h3>
+                    <p>
+                        Joined CBC as a Consulting team member in Spring 2022. I do preliminary and market research to assist our clients, primarily start-ups,
+                        in strategy, pricing, and product management. I have done research on decentralized data storage, auction pricing, fasion NFTs and more.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-block">
+                <img src="images/IMG_9260.jpg" alt="Data Analysis Dashboard" class="project-image">
+                <div class="project-text">
+                    <h3>Yamatai Taiko: Musical Director</h3>
+                    <p>
+                        I joined Yamatai Taiko in 2021. For me, taiko has been a way to stay fit, express myself, and find a tight-knit family in college. Despite many of us starting
+                        taiko in college, we are privilaged to be asked to perform at countless local events. I became the Musical Director in 2024, meaning that I lead practices and are responsible for the growth of our members.
+                        This also means managing our annual Spring performance PULSE, which draws in 1000+ ticket sales each year.
+
+                    </p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+
+        <!-- <h3 id="jump-proj">Projects</h3>
+
         <div class="block-proj">
             <div class="proj-text">
                 <h3>Interactive Cluster Map with Automatic Categories</h3>
                 <p>A mapping tool that creates a map and marks every point of data from a data set. These points are automatically sorted by their given category and can be manually hidden/clustered with the layer control menu at the top right. The focus for this project was a proof of concept that a map representing thousands of data points while being user readible was possible. <a href="https://leafletmapdemo.surge.sh/#close">Demo</a>
             </div>
-            <!-- <div class="gif">
-                <img src="images/map.gif" alt="GIF Image">
-            </div> -->
         </div>
 
         <div class="block-proj">
@@ -84,11 +234,11 @@
                     <a href="https://github.com/polybeandip/lambda-ledge">GitHub page.</a>
 
             </div>
-        </div>
+        </div> -->
 
 
-        <hr>
-        <h3>Skills/Relevent Courses</h3>
+        <!-- <hr> -->
+        <!-- <h3>Skills/Relevent Courses</h3>
         <div class="block-skill">
             <h2>Skills</h2>
             <p> Python &#x2022; Java &#x2022; OCaml &#x2022; HTML &#x2022; CSS &#x2022; R &#x2022; Microsoft Exel &#x2022; Stata &#x2022; Javascript
@@ -99,8 +249,8 @@
             <p> Object-Oriented Programming and Data Structures with Java &#x2022; Data Mining & Machine Learning &#x2022;Data Structures and Functional Programming with OCaml &#x2022; Data Driven Web Applications &#x2022; Introduction to Data Science &#x2022; Discrete Structures for Computer Science &#x2022; Intro to Computing with Python &#x2022; Intermediate Micro & Macroeconomics &#x2022; Applied Econometrics &#x2022; Networks &#x2022; Introduction to Blockchain
             <br></p>
         </div>
-        <p><br><br></p>
-    </div>
+        <p><br><br></p> -->
+    <!-- </div> -->
 
 
 
